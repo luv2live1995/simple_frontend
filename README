@@ -1,0 +1,25 @@
+# 課題
+1. Hàm eval có vấn đề về security
+
+
+# Knowledge
+
+I. HTML
+
+1. Difference between <button> and <input type="button" />
+https://stackoverflow.com/questions/469059/button-vs-input-type-button-which-to-use
+
+Chốt lại : Nên sử dụng input button
+<button> có default behavior là submit khi click
+
+2. Inline & Block elements 
+Inline : within one line, without breaking into a new line
+Block  : take up the full width available
+
+III. Tips
+
+1. Key shortcut
+Alt + Arrow             : mutate an entire line up or down
+Shift + Alt + ↑ OR ↓    : copy a row up or down 
+
+2. Link with github
