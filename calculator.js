@@ -1,8 +1,8 @@
 $(document).ready(function(){
+
+
     $(".number, .operator").click(function(){
         var btnVal = $(this).val();
-        // console.log(btnVal);
-        // var curDisp = $(".display p").val();
         $(".display p").append(btnVal);
     });
 
@@ -21,13 +21,15 @@ $(document).ready(function(){
         $(".display p").text(oneLastCharRemoved);
     });
 
-    $(".tab-btn").click(function() {
-        $(".tab-btn").removeClass("active");
+    $(".tab").click(function(){
+        $(".tab").removeClass("active");
         $(this).addClass("active");
-      
         $(".tab-content").removeClass("active");
-        $("#" + $(this).data("tab")).addClass("active");
-      });
+        $("#tab-" + $(this).attr("data-tab").split("-")[1]).addClass("active");
+    });
+    
+
+    
 
 });
 

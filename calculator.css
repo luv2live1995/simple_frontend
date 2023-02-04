@@ -7,9 +7,7 @@
     /* width: 100%;             */
 /* } */
 
-.row1, .row2, .row3 {
-    display: block;
-}
+
 
 /* .button {
     width: calc(100% / 3);
@@ -35,25 +33,29 @@
     }
 } */
 
+.row1, .row2, .row3 {
+    display: block;
+}
+
 .tabs {
     display: flex;
-  }
-  
-  .tab-btn {
-    padding: 10px 20px;
-    border: 1px solid black;
-    background-color: white;
+    /* justify-content: flex-start; */
+    /* padding: 20px 20px; */
+    margin-right: 20px;
+}
+
+.tab {
     cursor: pointer;
-  }
-  
-  .tab-btn.active {
-    background-color: lightgray;
-  }
-  
-  .tab-content {
+    border: 1px solid lightgray;
+}
+
+.tab-content {
     display: none;
-  }
-  
-  .tab-content.active {
+}
+
+.active {
     display: block;
-  }
+}
+
+
+

@@ -1,6 +1,13 @@
 # 課題
-1. Hàm eval có vấn đề về security
-
+1. Eval function has problems about security
+2. Rearrange position of elements by CSS
+3. Autotype not popped out when typing (Visual Studio Code)
+4. Publish source code on AWS S3 (which service to choose ?)
+5. How to link 課題 with pull request on github (totally forgot it -.-)
+6. Format button with a more cool design 
+7. How to effectively debug in Javascript
+8. How to organize jQuery source code effectively 
+9. How to organize css source code effectively
 
 # Knowledge
 
@@ -9,14 +16,34 @@ I. HTML
 1. Difference between <button> and <input type="button" />
 https://stackoverflow.com/questions/469059/button-vs-input-type-button-which-to-use
 
-Chốt lại : Nên sử dụng input button
+Conclusion : Nên sử dụng input button
 <button> có default behavior là submit khi click
 
-2. Inline & Block elements 
-Inline : within one line, without breaking into a new line
-Block  : take up the full width available
+2. Tab
+<ul> <li> is better than button for creating tab 
 
-III. Tips
+3. Inline & Block elements 
+・　Inline : within one line, without breaking into a new line
+    <a> .... 
+・　Block  : take up the full width available
+　　<p>, <div> ....
+
+4. Canvas 
+Used to draw graphics on a web page using Javascript.
+
+II. Javascript
+
+$document.ready() is used to make sure that the page is fully loaded before running any Javascript code.
+→　Prevent errors caused by trying to manipulate elements that have not yet been loaded.
+
+III. CSS
+
+Shorthand style writing 
+Margin : space around element
+
+
+
+IV. Tips
 
 1. Key shortcut
 Alt + Arrow             : mutate an entire line up or down
