@@ -44,7 +44,6 @@ Shorthand style writing
 Margin : space around element
 
 
-
 IV. Tips
 
 1. Key shortcut
@@ -54,3 +53,6 @@ Shift + Alt + ↑ OR ↓    : copy a row up or down
 2. Link with github
 Github.io requires main index file being named as index.html
 
+V. React
+1. How to run React app 
+Compulsory : Node.js & npm
