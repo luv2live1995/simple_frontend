@@ -69,7 +69,7 @@
                         <td>山田</td>
                         <td>
                             <!-- <input type="button" class="create_btn" value="新規追加"> -->
-                            <input type="button" class="read_btn" value="参照">
+                            <input type="button" class="ref_btn" value="参照">
                             <input type="button" class="upd_btn" value="編集">
                             <input type="button" class="del_btn" value="削除">
                         </td>
@@ -79,7 +79,7 @@
                         <td>島田</td>
                         <td>
                             <!-- <input type="button" class="create_btn" value="新規追加"> -->
-                            <input type="button" class="read_btn" value="参照">
+                            <input type="button" class="ref_btn" value="参照">
                             <input type="button" class="upd_btn" value="編集">
                             <input type="button" class="del_btn" value="削除">
                         </td>
@@ -89,7 +89,7 @@
                         <td>渡辺</td>
                         <td>
                             <!-- <input type="button" class="create_btn" value="新規追加"> -->
-                            <input type="button" class="read_btn" value="参照">
+                            <input type="button" class="ref_btn" value="参照">
                             <input type="button" class="upd_btn" value="編集">
                             <input type="button" class="del_btn" value="削除">
                         </td>
@@ -97,10 +97,23 @@
                 </tbody>
             </table>
             
-            <div id="dialog" style="display:none;">
+            <!-- <div id="dialog" style="display:none;">
                 <p>ID: <span id="dialog-id"></span></p>
                 <p>Name: <span id="dialog-name"></span></p>
+                <input type="button" value="OK">
+                <input type="button" value="Cancel">
+            </div> -->
+
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times</span>
+                    <p>ID: <span id="dialog-id"></span></p>
+                    <p>Name: <span id="dialog-name"></span></p>
+                    <input type="button" class="ok_btn" value="OK">
+                    <input type="button" class="cancel_btn" value="Cancel">    
+                </div>
             </div>
+
         </div>
         
         <div class="tab-content" id="tab-3">

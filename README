@@ -52,3 +52,5 @@ Alt + Arrow             : mutate an entire line up or down
 Shift + Alt + ↑ OR ↓    : copy a row up or down 
 
 2. Link with github
+Github.io requires main index file being named as index.html
+

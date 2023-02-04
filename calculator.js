@@ -32,7 +32,7 @@ $(document).ready(function(){
         $(this).closest("tr").remove();
     });
 
-    $(".upd_btn").click(function(){
+    $(".ref_btn").click(function(){
         // Get the closest parent (upper retrieving)
         var parentTr = $(this).closest("tr");
 
@@ -42,9 +42,20 @@ $(document).ready(function(){
         $('#dialog-id').text(id);
         $('#dialog-name').text(name);
 
-        $("#dialog").css('display', 'block');
+        $(".modal").css('display', 'block');
 
     });
+
+    $(".ok_btn").click(function(){
+        $(this).closest(".modal").css('display', 'none');
+    });
+
+    $(".cancel_btn").click(function(){
+        $(this).closest(".modal").css('display', 'none');
+    });
+
+
+    
 
     
 
