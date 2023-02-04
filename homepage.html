@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <script src="jquery-3.6.3.js"></script>
+    <!-- Add any CSS styles here -->
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;    
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .notification, .avatar {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .notification-content, .avatar-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .notification:hover .notification-content, .avatar:hover .avatar-content {
+            display: block;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="header-right">
+        <div class="notification">
+          <i class="fa fa-bell"></i>
+          <div class="notification-content">
+            <!-- Add code to show notifications here -->
+          </div>
+        </div>
+        <div class="avatar">
+          <img src="avatar.png" alt="Avatar">
+          <div class="avatar-content">
+            <a href="#">Settings</a>
+            <a href="#">User Profile</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside>
+        <ul class="sidebar-nav">
+            <li class="dropdown">
+              <a href="#">簿記</a>
+              <ul class="sub-menu">
+                <li class="dropdown-item">
+                  <a href="#">財務</a>
+                  <ul class="sub-sub-menu">
+                    <li class="sub-dropdown-item"><a href="#">財務1</a></li>
+                    <li class="sub-dropdown-item"><a href="#">財務2</a></li>
+                    <li class="sub-dropdown-item"><a href="#">財務3</a></li>
+                    <li class="sub-dropdown-item"><a href="#">財務4</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">固定資産</a>
+                  <ul class="sub-sub-menu">
+                    <li class="sub-dropdown-item"><a href="#">固定資産1</a></li>
+                    <li class="sub-dropdown-item"><a href="#">固定資産2</a></li>
+                    <li class="sub-dropdown-item"><a href="#">固定資産3</a></li>
+                    <li class="sub-dropdown-item"><a href="#">固定資産4</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">固定資産</a>
+                  <ul class="sub-sub-menu">
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 1</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 2</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 3</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Clean Code</a>
+              <ul class="sub-menu">
+                <li class="dropdown-item">
+                  <a href="#">Design patterns</a>
+                  <ul class="sub-sub-menu">
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 1</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 2</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 3</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 4</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Should hide</a>
+                  <ul class="sub-sub-menu">
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 1</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 2</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 3</a></li>
+                    <li class="sub-dropdown-item"><a href="#">Sub-item 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+        </ul>
+    </aside>
+    <main>
+      <div class="body-content">
+        <p></p>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy; Company Name</p>
+      <p>Phone: 123-456-7890</p>
+    </footer>
+  </body>
+
+  <script>
+    $('li.dropdown').click(function() {
+        // alert("This has been clicked");
+        $(this).find('.sub-menu').toggle();
+        $(".body-content p").text("corresponding item has been clicked");
+    });
+    
+    $('.sub-menu-item').click(function() {
+        $('.sub-menu').hide();
+        $(".body-content p").text("corresponding item has been clicked");
+    });
+
+    $('.sub-sub-menu-item').click(function() {
+        // Update body content here
+    });
+</script>
+</html>

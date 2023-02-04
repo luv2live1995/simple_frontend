@@ -56,3 +56,12 @@ Github.io requires main index file being named as index.html
 V. React
 1. How to run React app 
 Compulsory : Node.js & npm
+
+Related keyword : axios for fetching data 
+
+VI. CSharp 
+1. How to check netcore version installed (Windows) : 
+dotnet --version
+
+2. Client-side & Server-side web application
+Client-side : receives HTML, CSS, JS from the server and runs the code to display webpages. 
