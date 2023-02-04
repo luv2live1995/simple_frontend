@@ -28,6 +28,23 @@ $(document).ready(function(){
         $("#tab-" + $(this).attr("data-tab").split("-")[1]).addClass("active");
     });
     
+    $(".del_btn").click(function(){
+        $(this).closest("tr").remove();
+    });
+
+    $(".upd_btn").click(function(){
+        // Get the closest parent (upper retrieving)
+        var parentTr = $(this).closest("tr");
+
+        var id   = parentTr.find("td:first").text();
+        var name = parentTr.find("td:nth-child(2)").text();
+        
+        $('#dialog-id').text(id);
+        $('#dialog-name').text(name);
+
+        $("#dialog").css('display', 'block');
+
+    });
 
     
 

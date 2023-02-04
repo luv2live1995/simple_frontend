@@ -1,0 +1,112 @@
+<!-- Simple calculator contains 4 basic operators : plus, minus, multiply, divide -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="jquery-3.6.3.js"></script>
+        <link rel="stylesheet" href="calculator.css" />
+        <script src="calculator.js"></script>
+        <title>Title</title>
+        
+    </head>
+    <body>
+        <ul class="tabs">
+            <li class="tab active" data-tab="tab-1">Calculator</li>
+            <li class="tab" data-tab="tab-2">Simple CRUD on front end</li>
+            <li class="tab" data-tab="tab-3">A little bit complex register page</li>
+            <!-- <li class="tab" data-tab="tab-3"></li> -->
+        </ul>
+
+        <div class="tab-content" id="tab-1">
+            <h3>Calculator</h3>
+            <div class="display">
+                <p></p>
+            </div>
+            <div class="keyboard">
+                <button class="funcKey" id="clear">C</button>
+                <button class="funcKey" id="backspace">CE</button>
+                <!-- <button class="operator" id="%">%</button> -->
+                <div class="row1">
+                    <input type="button" class="number" value="0">
+                    <input type="button" class="number" value="1">
+                    <input type="button" class="number" value="2">
+                </div>
+                <div class="row2">
+                    <input type="button" class="number" value="3">
+                    <input type="button" class="number" value="4">
+                    <input type="button" class="number" value="5">
+                </div>
+                <div class="row3">
+                    <input type="button" class="number" value="6">
+                    <input type="button" class="number" value="7">
+                    <input type="button" class="number" value="8">
+                </div>
+                <input type="button" class="number" value="9">
+                <div>
+                    <input type="button" class="operator" value="+">
+                    <input type="button" class="operator" value="-">
+                    <input type="button" class="operator" value="*">
+                    <input type="button" class="operator" value="/">
+                    <input type="button" class="calcBtn" value="=">
+                </div>            
+            </div>
+        </div>
+              
+        <div class="tab-content" id="tab-2">
+            <h3>Simple CRUD on front end</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><input type="button" class="create_btn" value="新規追加"></tr>
+                    <tr>
+                        <td>1</td>
+                        <td>山田</td>
+                        <td>
+                            <!-- <input type="button" class="create_btn" value="新規追加"> -->
+                            <input type="button" class="read_btn" value="参照">
+                            <input type="button" class="upd_btn" value="編集">
+                            <input type="button" class="del_btn" value="削除">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>島田</td>
+                        <td>
+                            <!-- <input type="button" class="create_btn" value="新規追加"> -->
+                            <input type="button" class="read_btn" value="参照">
+                            <input type="button" class="upd_btn" value="編集">
+                            <input type="button" class="del_btn" value="削除">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>渡辺</td>
+                        <td>
+                            <!-- <input type="button" class="create_btn" value="新規追加"> -->
+                            <input type="button" class="read_btn" value="参照">
+                            <input type="button" class="upd_btn" value="編集">
+                            <input type="button" class="del_btn" value="削除">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div id="dialog" style="display:none;">
+                <p>ID: <span id="dialog-id"></span></p>
+                <p>Name: <span id="dialog-name"></span></p>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="tab-3">
+            <h3>Tab 3 Content</h3>
+            <p>This is the content of tab 3.</p>
+        </div>
+        
+    </body>
+</html>
