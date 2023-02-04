@@ -44,9 +44,13 @@
     margin-right: 20px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .tab {
     cursor: pointer;
-    border: 1px solid lightgray;
+    border: 5px solid lightgray;
 }
 
 .tab-content {
