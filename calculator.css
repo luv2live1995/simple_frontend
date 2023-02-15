@@ -61,7 +61,7 @@ ul {
     display: block;
 }
 
-.modal {
+.modal-new, .model-ref {
     display: none;      /* Hidden by default */
     position: fixed;    /* Hidden by default */
     z-index: 1;
