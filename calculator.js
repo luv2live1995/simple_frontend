@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     $(".number, .operator").click(function(){
         var btnVal = $(this).val();
         $(".display p").append(btnVal);
@@ -27,6 +26,10 @@ $(document).ready(function(){
         $(".tab-content").removeClass("active");
         $("#tab-" + $(this).attr("data-tab").split("-")[1]).addClass("active");
     });
+
+    $(".new_btn").click(function(){
+        $(".modal-new").css('display', 'block');
+    });
     
     $(".del_btn").click(function(){
         $(this).closest("tr").remove();
@@ -39,19 +42,20 @@ $(document).ready(function(){
         var id   = parentTr.find("td:first").text();
         var name = parentTr.find("td:nth-child(2)").text();
         
-        $('#dialog-id').text(id);
-        $('#dialog-name').text(name);
+        $('#ref-dialog-id').text(id);
+        $('#ref-dialog-name').text(name);
 
-        $(".modal").css('display', 'block');
-
+        $(".modal-ref").css('display', 'block');
     });
 
     $(".ok_btn").click(function(){
-        $(this).closest(".modal").css('display', 'none');
+        $(this).closest(".modal-new").css('display', 'none');
+        $(this).closest(".modal-ref").css('display', 'none');
     });
 
     $(".cancel_btn").click(function(){
-        $(this).closest(".modal").css('display', 'none');
+        $(this).closest(".modal-new").css('display', 'none');
+        $(this).closest(".modal-ref").css('display', 'none');
     });
 
 
